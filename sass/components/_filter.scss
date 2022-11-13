@@ -1,15 +1,17 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 
-.filter__item {
-  margin-right: 8px;
-}
+  @media screen and (min-width: 767px) {
+    margin-bottom: 30px;
+  }
 
-.filter__item:last-of-type {
-  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {

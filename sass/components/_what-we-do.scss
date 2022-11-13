@@ -1,11 +1,19 @@
 .what-we-do {
+  padding-top: 0;
+  
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.what-we-do__list {
   display: flex;
   justify-content: space-between;
 }
 
 .what-we-do__item {
   position: relative;
-  width: calc(33.333% - 30px/3*2);
+  width: calc(33.333% - 30px / 3 * 2);
 }
 
 .what-we-do__item img {
