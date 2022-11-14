@@ -149,15 +149,15 @@
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="what-we-do__list">
           <li class="what-we-do__item">
-            <img src="./images/image1.jpg" alt="Планшет на клавіатура" width="370" />
+            <img src="./images/what-we-do/image1.jpg" alt="Планшет на клавіатура" width="370" />
             <p class="what-we-do__text">Десктопні додатки</p>
           </li>
           <li class="what-we-do__item">
-            <img src="./images/image2.jpg" alt="Ноутбук та телефон" width="370" />
+            <img src="./images/what-we-do/image2.jpg" alt="Ноутбук та телефон" width="370" />
             <p class="what-we-do__text">Мобільні додатки</p>
           </li>
           <li class="what-we-do__item">
-            <img src="./images/image3.jpg" alt="Графічний планшет" width="370" />
+            <img src="./images/what-we-do/image3.jpg" alt="Графічний планшет" width="370" />
             <p class="what-we-do__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -169,7 +169,15 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team__list">
           <li class="team-member">
-            <img src="./images/team-member1.jpg" alt="Фото Ігора Дем'яненка" width="270" />
+            <picture>
+              <source srcset="./images/team/desktop1.jpg 1x, ./images/team/desktop1@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/tablet1.jpg 1x, ./images/team/tablet1@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/mobile1.jpg 1x, ./images/team/mobile1@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./images/team/mobile1.jpg" alt="Фото Ігора Дем'яненка" width="450" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__title">Ігор Дем'яненко</h3>
               <p class="team-member__text">Product Designer</p>
@@ -206,7 +214,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/team-member2.jpg" alt="Фото Ольги Рєпіної" width="270" />
+            <picture>
+              <source srcset="./images/team/desktop2.jpg 1x, ./images/team/desktop2@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/tablet2.jpg 1x, ./images/team/tablet2@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/mobile2.jpg 1x, ./images/team/mobile2@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./images/team/mobile2.jpg" alt="Фото Ольги Рєпіної" width="450" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__title">Ольга Рєпіна</h3>
               <p class="team-member__text">Frontend Developer</p>
@@ -243,7 +259,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/team-member3.jpg" alt="Фото Миколи Тарасова" width="270" />
+            <picture>
+              <source srcset="./images/team/desktop3.jpg 1x, ./images/team/desktop3@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/tablet3.jpg 1x, ./images/team/tablet3@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/mobile3.jpg 1x, ./images/team/mobile3@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./images/team/mobile3.jpg" alt="Фото Миколи Тарасова" width="450" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__title">Микола Тарасов</h3>
               <p class="team-member__text">Marketing</p>
@@ -280,7 +304,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img src="./images/team-member4.jpg" alt="Фото Михайла Єрмакова" width="270" />
+            <picture>
+              <source srcset="./images/team/desktop4.jpg 1x, ./images/team/desktop4@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/tablet4.jpg 1x, ./images/team/tablet4@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/mobile4.jpg 1x, ./images/team/mobile4@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./images/team/mobile4.jpg" alt="Фото Михайла Єрмакова" width="450" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__title">Михайло Єрмаков</h3>
               <p class="team-member__text">UI Designer</p>
