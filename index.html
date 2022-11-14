@@ -13,44 +13,73 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <nav class="header-navigation">
-        <a class="logo header-logo" href="./index.html">
+        <a class="logo header__logo" href="./index.html">
           Web<span class="logo__second-word">Studio</span>
         </a>
-        <ul class="header-menu">
-          <li class="header-menu__item">
-            <a class="header-link current" href="./index.html" class="current">Студія</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-link" href="#">Контакти</a>
-          </li>
-        </ul>
+        <div class="header-menu-container js-menu-container">
+          <button class="close-menu js-close-menu" aria-label="Перемикач меню" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu-close"></use>
+            </svg>
+          </button>
+          <ul class="header-menu">
+            <li>
+              <a class="header__link current" href="./index.html" class="current">Студія</a>
+            </li>
+            <li>
+              <a class="header__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="header__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <div class="header-menu-container--bottom">
+            <a class="header-mobile-tel" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+            <a href="mailto:info@devstudio.com" class="header-mobile-mail">
+              info@devstudio.com
+            </a>
+            <div class="header-socials">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow">Instagram</a>
+              <span></span>
+              <a href="https://www.twitter.com/" target="_blank" rel="noopener nofollow">Twitter</a>
+              <span></span>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow">Facebook</a>
+              <span></span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow">Linkedin</a>
+            </div>
+          </div>
+        </div>
       </nav>
       <ul class="header-contacts">
-        <li class="header-contacts__item">
-          <a href="mailto:info@devstudio.com" class="header-link">
-            <svg width="16" height="12" class="header-link__icon">
+        <li>
+          <a href="mailto:info@devstudio.com" class="header__link header-contacts__link">
+            <svg width="16" height="12">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="header-contacts__item">
-          <a class="header-link" href="tel:+380961111111">
-            <svg width="10" height="16" class="header-link__icon">
+        <li>
+          <a class="header__link header-contacts__link" href="tel:+380961111111">
+            <svg width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
           </a>
         </li>
       </ul>
+      <button class="burger js-open-menu" type="button" aria-label="Перемикач меню">
+        <svg width="40" height="40">
+          <use class="" href="./images/icons.svg#menu-open"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  </header>
 
   <main>
     <section class="section banner">
@@ -476,7 +505,7 @@
 
   <!-- Скрипти -->
   <script src="./modal.js"></script>
-  <script src="./modal.js"></script>
+  <script src="./mobile-menu.js"></script>
 </body>
 
 </html>
