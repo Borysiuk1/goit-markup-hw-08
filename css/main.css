@@ -125,7 +125,9 @@ button {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
+  z-index: 100;
 }
 .header__container {
   display: flex;
