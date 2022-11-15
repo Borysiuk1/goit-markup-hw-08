@@ -5,13 +5,18 @@
 
 .footer__container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  flex-direction: column;
   gap: 60px;
 
-  @media screen and (max-width: 1199px) {
-    justify-content: space-between;
-    max-width: 633px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
   }
 }
 

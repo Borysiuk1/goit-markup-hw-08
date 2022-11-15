@@ -1,7 +1,6 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
-  z-index: 100;
 
   &__container {
     display: flex;
@@ -46,11 +45,17 @@
       padding: 48px 40px;
       overflow-y: scroll;
       background: #fff;
-      transition: right 0.5s;
+      opacity: 0;
+      transition: opacity 0.5s;
 
       &.is-open {
         right: 0;
+        opacity: 1;
       }
+    }
+
+    @media screen and (max-width: 479px) {
+      padding: 24px 20px;
     }
 
     &--bottom {
@@ -76,21 +81,29 @@
     .header-mobile-tel {
       display: block;
       font-weight: 500;
-      font-size: 34px;
+      font-size: 24px;
       line-height: 1.17;
       letter-spacing: 0.02em;
       color: $accent-color;
       margin-bottom: 32px;
+
+      @media screen and (min-width: 480px) {
+        font-size: 34px;
+      }
     }
 
     .header-mobile-mail {
       display: block;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 1.17;
       letter-spacing: 0.02em;
       color: $second-text-color;
       margin-bottom: 64px;
+
+      @media screen and (min-width: 480px) {
+        font-size: 24px;
+      }
     }
 
     .header-socials {
@@ -101,9 +114,13 @@
       a {
         color: $accent-color;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 22px;
         letter-spacing: 0.02em;
+
+        @media screen and (min-width: 480px) {
+          font-size: 18px;
+        }
       }
 
       span {
@@ -117,7 +134,7 @@
   }
 
   .header-contacts {
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
       gap: 10px;

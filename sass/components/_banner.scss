@@ -1,5 +1,5 @@
 .banner {
-  max-width: 1600px;
+  max-width: 480px;
   padding: 118px 0;
   margin: 0 auto;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
@@ -12,7 +12,8 @@
       url('../images/banner/mobile-banner@2x.jpg');
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
       url('../images/banner/tablet-banner.jpg');
 
@@ -23,6 +24,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
       url('../images/banner/desktop-banner.jpg');
@@ -35,7 +37,7 @@
 }
 
 .banner__title {
-  max-width: 696px;
+  max-width: 360px;
   color: $third-text-color;
   text-transform: uppercase;
   text-align: center;
@@ -48,6 +50,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
